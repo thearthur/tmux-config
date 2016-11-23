@@ -2,7 +2,7 @@
 
 This config has support for [tmux-mem-cpu](http://github.com/thewtex/tmux-mem-cpu-load).
 
-Prefix mapped to Ctrl-A for `screen` users.
+Prefix mapped to Ctrl-Q for `emacs` users sanity.
 
 Installation
 ------------
@@ -10,19 +10,19 @@ Installation
   Download:
 
 ```bash
-git clone https://github.com/tony/tmux-config.git ~/.tmux-tony
+git clone https://github.com/thearthur/tmux-config.git ~/.tmux-config
 ```
 
   Copy tmux config to home:
 
 ```bash
-ln -s ~/.tmux-tony/.tmux.conf ~/.tmux.conf
+ln -s ~/.tmux-config/.tmux.conf ~/.tmux.conf
 ```
 
   Go to config dir:
 
 ```bash
-cd ~/.tmux-tony
+cd ~/.tmux-config
 ```
 
   Prep ourself to download submodule:
@@ -91,26 +91,31 @@ Start tmux
 Commands
 --------
 
-  Our prefix/leader key is `Control + a` now (just like the `screen` multiplexer). This sequence must be typed before any tmux shortcut.
+  Our prefix/leader key is `Control + q` now. This sequence must be typed before any tmux shortcut.
 
-  * `Control + a` before any command
-  * `Control + a` then `?` to bring up list of keyboard shortcuts
-  * `Control + a` then `"` to split window
-  * `Control + a` then `<Space>` to change pane arrangement
-  * `Control + a` then `o` to rotate panes
-  * `Control + a` then `h`, `j`, `k`, `l` to move left, down, up, right. Respectively. (vim hjkl)
-  * `Control + a` then `;` to go to last panel
+  * `Control + q` before any command
+  * `Control + q` then `?` to bring up list of keyboard shortcuts
+  * `Control + q` then `"` to split window
+  * `Control + q` then `<Space>` to change pane arrangement
+  * `Control + q` then `o` to rotate panes
+  * `Control + q` then `h`, `j`, `k`, `l` to move left, down, up, right. Respectively. (vim hjkl)
+  * `Control + q` then `;` to go to last panel
 
   Beyond your first window:
 
-  * `Control + a` then `c` to create a new window
-  * `Control + a` then `n` to next window
-  * `Control + a` then `p` to previous window
-  * `Control + a` then `[0-9]` move to window number
-  * `Control + a` then `&` to kill window
+  * `Control + q` then `c` to create a new window
+  * `Control + q` then `n` to next window
+  * `Control + q` then `p` to previous window
+  * `Control + q` then `[0-9]` move to window number
+  * `Control + q` then `&` to kill window
 
 
-by Tony Narlock (tony@git-pull.com)
+All the good stuff is by Tony Narlock (tony@git-pull.com)
+This revision's bugs and arbitrary opinions provided by: Arthur Ulfeldt (arthur@ulfeldt.com)
 
+Prais and appreciation goes to:
 * Github: http://www.github.com/tony
 * Website: http://www.git-pull.com
+
+Complaints and critisims go to 
+* Github: http://www.github.com/thearthur 
